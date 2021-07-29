@@ -1,0 +1,103 @@
+*{
+
+box-sizing: border-box;
+margin:0;
+padding:0;
+
+}
+
+ .container { 
+
+width:100%; 
+height:650px; 
+background-color:lightblue  ;
+display: flex;
+justify-content: space-around;
+align-items: center;
+} 
+
+
+.input {
+   background-color: white;
+/* border: 2px solid white; */
+   border-radius: 20px;
+   position: relative;
+   width: 600px;
+   height: 300px;
+   /* min-height: 100px; */
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
+   padding: 20px 20px 20px;
+}
+ 
+ .output {
+
+   background-color: darkslategray; 
+   position: absolute; 
+   border-radius: 15px;
+   width: 250px;
+   height: 250px;
+  
+} 
+
+.inputNP {
+
+display: flex;
+flex-direction: column;
+align-self: start;
+justify-content: flex-end;
+
+}
+
+
+.inputNumber_Title {
+
+   margin-top: 10px;
+   margin-bottom: 5px;
+
+}
+
+
+
+.inputNumber {
+
+margin-right: 350px;
+
+}
+
+
+.inputPeople_Title {
+
+   margin-top: 40px ;
+   margin-bottom: 5px ;
+}
+   
+   
+.inputPeople {
+
+
+margin-right: 350px;
+
+}
+
+.buttons {
+margin-top: 60px;
+display: flex;
+flex-wrap: wrap;
+width: 300px ;
+height: 70 px;
+
+}
+
+.button {
+
+width: 70px;
+height: 25px;
+margin: 4px;
+}
+
+
+   /* font-size: 11px; text-align: center;  */
+       
+ 
