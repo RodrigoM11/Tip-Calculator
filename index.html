@@ -20,26 +20,31 @@
     
    <section class="input">
 
-  <form class="inputNP">
+  <form class="inputNP" id="form">
 
     <div class="inputNumber_Title">BILL</div>
-    <input class="inputNumber" type="text" placeholder="$">
+    <input class="inputNumber" name="bill" type="text" placeholder="$">
     <section class="buttons">
-    <button class="button">5%</button>
-    <button class="button">10%</button>
-    <button class="button">15%</button>
-    <button class="button">25%</button>
-    <button class="button">50%</button>
-    <button class="button">Custom</button>
+		<button class="button" value="5">5%</button>
+		<button class="button" value="10">10%</button>
+		<button class="button" value="15">15%</button>
+		<button class="button" value="25">25%</button>
+		<button class="button" value="50">50%</button>
+		<input class="inputCustom" type="number" name="custom" placeholder="CUSTOM" id="custom-input" />
     </section>
     <div class="inputPeople_Title">NUMBER OF PEOPLE</div>
-    <input class="inputPeople" type="text" placeholder="N">
+    <input class="inputPeople" name="personNumber" type="number" placeholder="N">
     
   </form>
    
     <section class="output"> 
-
-
+		<div class="tip-amount">
+			<p id="tip-amount" id="tip-amount">$0.00</p>
+		</div>
+		<div class="total">
+			<p id="total-amount" id="total-amount">$0.00</p>
+		</div>
+		<button type="reset" id="reset">Reset</button>
     </section>
    </section>
   </section>  
@@ -49,5 +54,6 @@
 
   </footer>
 
+  <script src="index.js"></script>
 </body>
 </html>
