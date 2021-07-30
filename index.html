@@ -5,25 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./stilecss/style.css">
 
   <title>Tip calculator app</title>
 
 </head>
 <body>
-  
-  <header>
-
-  </header>
-
   <section class="container">
-    
    <section class="input">
 
-  <form class="inputNP" id="form">
+  <div class="inputNP">
 
-    <div class="inputNumber_Title">BILL</div>
-    <input class="inputNumber" name="bill" type="text" placeholder="$">
+    <div class="inputNumber_Title">Bill</div>
+
+    <input class="inputNumber" type="text" placeholder="$">
+    
     <section class="buttons">
 		<button class="button" value="5">5%</button>
 		<button class="button" value="10">10%</button>
@@ -32,27 +31,31 @@
 		<button class="button" value="50">50%</button>
 		<input class="inputCustom" type="number" name="custom" placeholder="CUSTOM" id="custom-input" />
     </section>
-    <div class="inputPeople_Title">NUMBER OF PEOPLE</div>
-    <input class="inputPeople" name="personNumber" type="number" placeholder="N">
-    
-  </form>
-   
-    <section class="output"> 
-		<div class="tip-amount">
-			<p id="tip-amount" id="tip-amount">$0.00</p>
-		</div>
-		<div class="total">
-			<p id="total-amount" id="total-amount">$0.00</p>
-		</div>
-		<button type="reset" id="reset">Reset</button>
-    </section>
-   </section>
-  </section>  
+
+    <div class="inputPeople_Title">Number of people</div>
+    <input class="inputPeople" type="number" placeholder="n">
   
-
-  <footer>
-
-  </footer>
+  </div>
+ 
+  <section class="output"> 
+          <div class="output_total">
+            <div>TipAmount
+             <output class="output_disp1">$</output>
+            </div>
+            <div>Total
+             <output class="output_disp2">$</output>
+            </div>
+          </div>
+        
+     <section class="output_button">
+     
+        <button class="output_button_details">RESET</button>
+      
+     </section>
+        
+  </section>
+  </section>
+  </section>  
 
   <script src="index.js"></script>
 </body>
