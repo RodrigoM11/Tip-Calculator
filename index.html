@@ -11,19 +11,15 @@
 
 </head>
 <body>
-  
-  <header>
-
-  </header>
-
   <section class="container">
-    
    <section class="input">
 
-  <form class="inputNP">
+  <div class="inputNP">
 
-    <div class="inputNumber_Title">BILL</div>
+    <div class="inputNumber_Title">Bill</div>
+
     <input class="inputNumber" type="text" placeholder="$">
+    
     <section class="buttons">
     <button class="button">5%</button>
     <button class="button">10%</button>
@@ -32,22 +28,31 @@
     <button class="button">50%</button>
     <button class="button">Custom</button>
     </section>
-    <div class="inputPeople_Title">NUMBER OF PEOPLE</div>
-    <input class="inputPeople" type="text" placeholder="N">
-    
-  </form>
-   
-    <section class="output"> 
 
-
-    </section>
-   </section>
-  </section>  
+    <div class="inputPeople_Title">Number of people</div>
+    <input class="inputPeople" type="number" placeholder="n">
   
-
-  <footer>
-
-  </footer>
+  </div>
+ 
+  <section class="output"> 
+          <div class="output_total">
+            <div>TipAmount
+             <output class="output_disp1">$</output>
+            </div>
+            <div>Total
+             <output class="output_disp2">$</output>
+            </div>
+          </div>
+        
+     <section class="output_button">
+     
+        <button class="output_button_details">RESET</button>
+      
+     </section>
+        
+  </section>
+  </section>
+  </section>  
 
 </body>
 </html>
