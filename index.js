@@ -1,5 +1,5 @@
 const form = document.querySelector("#form");
-const $buttons = document.querySelectorAll(".button");
+const $buttons = document.querySelectorAll(".button[type='button']");
 const $customInput = document.querySelector("#custom-input");
 const $resetBtn = document.querySelector("#reset");
 const $tipAmount = document.querySelector('#tip-amount')
@@ -25,19 +25,20 @@ $customInput.addEventListener('focus', () => {
 })
 
 $resetBtn.addEventListener("click", () => {
+    $tipAmount.innerHTML = '$0.00'
+    $totalAmount.innerHTML = '$0.00'
     form.reset();
 })
 
 form.addEventListener("submit", (e) => {
     e.preventDefault();
 
-    console.log(':D')
     const formData = new FormData(form);
     const bill = Number(formData.get("bill"));
     const person = Number(formData.get("personNumber"));
     const custom = Number(formData.get("custom"));
 
-    if(bill > 0 && person > 0) {
+    if(!isNaN(bill) && bill > 0 && person > 0) {
         setValues({
             bill,
             person,
@@ -53,6 +54,7 @@ function setValues({ bill, person, custom }) {
               btn.classList.contains("active")
           ).value);
 
+    console.log(bill, person, percent)
     const tip = tipAmount(Number(bill), percent, person);
     const totalBill = total(bill, person, tip);
 
