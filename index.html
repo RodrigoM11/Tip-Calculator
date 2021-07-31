@@ -1,44 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Tip calculator app</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./stilecss/style.css">
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <title>Tip calculator app</title>
+
 </head>
 <body>
+	<section class="container">
+		<section class="input">
+			<form class="inputNP" id="form">
 
-  Bill
+			<label class="inputNumber_Title" for="bill">Bill</label>
 
-  Select Tip %
-  5%
-  10%
-  15%
-  25%
-  50%
-  Custom
+			<input class="inputNumber" name="bill" id="bill" type="number" placeholder="$">
 
-  Number of People
+			<section class="buttons">
+				<button class="button" type="button" value="5">5%</button>
+				<button class="button" type="button" value="10">10%</button>
+				<button class="button" type="button" value="15">15%</button>
+				<button class="button" type="button" value="25">25%</button>
+				<button class="button" type="button" value="50">50%</button>
+				<input class="inputCustom" type="number" name="custom" placeholder="CUSTOM" id="custom-input" />
+			</section>
 
-  Tip Amount
-  / person
+			<label for="people-number" class="inputPeople_Title">Number of people</label>
+			<input class="inputPeople" id="people-number" type="number" name="personNumber" placeholder="n">
+			<button type="submit" class="button">calcular</button>
+			</form>
 
-  Total
-  / person
+			<section class="output"> 
+					<div class="output_total">
+						<div class="tipAmount">
+							<div class="tipAmount_Title">
+								<p>TipAmount</p>
+								<small>/person</small>
+							</div>
+							<div class="tipAmount_Result">
+							<p class="output_disp1" id="tip-amount">$0.00</p>
+							</div>
+						</div>
+						<div class="tipAmount">
+							<div class="tipAmount_Title">
+								<p>Total</p>
+								<small>/ person</small>
+							</div>
+							<div class="tipAmount_Result">
+								<p class="output_disp2" id="total-amount">$0.00</p>
+							</div>
+						</div>
+					</div>
+				
+				<section class="output_button">
+				
+				<button class="output_button_details" id="reset">RESET</button>
+				
+				</section>
+				
+			</section>
+		</section>
+	</section>  
 
-  Reset
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <script src="index.js"></script>
 </body>
 </html>
