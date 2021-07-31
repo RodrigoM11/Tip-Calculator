@@ -14,48 +14,59 @@
 
 </head>
 <body>
-  <section class="container">
-   <section class="input">
+	<section class="container">
+		<section class="input">
+			<form class="inputNP" id="form">
 
-  <div class="inputNP">
+			<label class="inputNumber_Title" for="bill">Bill</label>
 
-    <div class="inputNumber_Title">Bill</div>
+			<input class="inputNumber" name="bill" id="bill" type="number" placeholder="$">
 
-    <input class="inputNumber" type="text" placeholder="$">
-    
-    <section class="buttons">
-		<button class="button" value="5">5%</button>
-		<button class="button" value="10">10%</button>
-		<button class="button" value="15">15%</button>
-		<button class="button" value="25">25%</button>
-		<button class="button" value="50">50%</button>
-		<input class="inputCustom" type="number" name="custom" placeholder="CUSTOM" id="custom-input" />
-    </section>
+			<section class="buttons">
+				<button class="button" type="button" value="5">5%</button>
+				<button class="button" type="button" value="10">10%</button>
+				<button class="button" type="button" value="15">15%</button>
+				<button class="button" type="button" value="25">25%</button>
+				<button class="button" type="button" value="50">50%</button>
+				<input class="inputCustom" type="number" name="custom" placeholder="CUSTOM" id="custom-input" />
+			</section>
 
-    <div class="inputPeople_Title">Number of people</div>
-    <input class="inputPeople" type="number" placeholder="n">
-  
-  </div>
- 
-  <section class="output"> 
-          <div class="output_total">
-            <div>TipAmount
-             <output class="output_disp1">$</output>
-            </div>
-            <div>Total
-             <output class="output_disp2">$</output>
-            </div>
-          </div>
-        
-     <section class="output_button">
-     
-        <button class="output_button_details">RESET</button>
-      
-     </section>
-        
-  </section>
-  </section>
-  </section>  
+			<label for="people-number" class="inputPeople_Title">Number of people</label>
+			<input class="inputPeople" id="people-number" type="number" name="personNumber" placeholder="n">
+			<button type="submit" class="button">calcular</button>
+			</form>
+
+			<section class="output"> 
+					<div class="output_total">
+						<div class="tipAmount">
+							<div class="tipAmount_Title">
+								<p>TipAmount</p>
+								<small>/person</small>
+							</div>
+							<div class="tipAmount_Result">
+							<p class="output_disp1" id="tip-amount">$0.00</p>
+							</div>
+						</div>
+						<div class="tipAmount">
+							<div class="tipAmount_Title">
+								<p>Total</p>
+								<small>/ person</small>
+							</div>
+							<div class="tipAmount_Result">
+								<p class="output_disp2" id="total-amount">$0.00</p>
+							</div>
+						</div>
+					</div>
+				
+				<section class="output_button">
+				
+				<button class="output_button_details" id="reset">RESET</button>
+				
+				</section>
+				
+			</section>
+		</section>
+	</section>  
 
   <script src="index.js"></script>
 </body>

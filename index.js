@@ -12,6 +12,7 @@ $buttons.forEach((btn) => {
                 button.classList.remove("active");
             }
         });
+        console.log('click')
         btn.classList.add("active");
         $customInput.value = 0
     });
@@ -30,6 +31,7 @@ $resetBtn.addEventListener("click", () => {
 form.addEventListener("submit", (e) => {
     e.preventDefault();
 
+    console.log(':D')
     const formData = new FormData(form);
     const bill = Number(formData.get("bill"));
     const person = Number(formData.get("personNumber"));
