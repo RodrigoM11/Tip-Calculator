@@ -5,6 +5,10 @@ const $resetBtn = document.querySelector("#reset");
 const $tipAmount = document.querySelector('#tip-amount')
 const $totalAmount = document.querySelector('#total-amount');
 
+
+
+
+
 $buttons.forEach((btn) => {
     btn.addEventListener("click", (e) => {
         $buttons.forEach((button) => {
@@ -18,17 +22,25 @@ $buttons.forEach((btn) => {
     });
 });
 
+
+
+
+
 $customInput.addEventListener('focus', () => {
     $buttons.forEach(btn => {
         btn.classList.remove("active");
     })
 })
 
+
 $resetBtn.addEventListener("click", () => {
     $tipAmount.innerHTML = '$0.00'
     $totalAmount.innerHTML = '$0.00'
     form.reset();
 })
+
+
+
 
 form.addEventListener("submit", (e) => {
     e.preventDefault();
@@ -47,6 +59,10 @@ form.addEventListener("submit", (e) => {
     }
 });
 
+
+
+
+
 function setValues({ bill, person, custom }) {
     const percent = custom > 0
         ? custom
@@ -54,7 +70,10 @@ function setValues({ bill, person, custom }) {
               btn.classList.contains("active")
           ).value);
 
-    console.log(bill, person, percent)
+          
+
+    console.log (bill, person, percent)
+    
     const tip = tipAmount(Number(bill), percent, person);
     const totalBill = total(bill, person, tip);
 
@@ -65,11 +84,17 @@ function setValues({ bill, person, custom }) {
         $tipAmount.innerHTML = '';
         $totalAmount.innerHTML = '';
     }
+
     $tipAmount.innerHTML = `$${tip}`
     $totalAmount.innerHTML = `$${totalBill}`
 }
 
+
+
+
+
 function tipAmount(amount, percent, person) {
+    
     const result = ((amount * percent) / 100) / person
     return Number(result.toFixed(2));
 }
