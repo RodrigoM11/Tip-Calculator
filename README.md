@@ -26,3 +26,4 @@ After cloning, open the index.html file in your browser to view the app
 - **3.** Forms.
 - **4.** Iterating and Manipulating Arrays.
 - **5.** CSS Styling.
+- **6.** Responsive design.
