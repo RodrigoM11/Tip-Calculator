@@ -15,7 +15,14 @@ This is a simple **Tip Calculator App** built with **HTML**, **CSS**, and **Java
 
 To run the app locally, follow these steps:
 
-```bash
 git clone https://github.com/RodrigoM11/Tip-Calculator.git
 
 After cloning, open the index.html file in your browser to view the app
+
+### Some concepts covered:
+
+- **1.** DOM Manipulation.
+- **2.** Events.
+- **3.** Forms.
+- **4.** Iterating and Manipulating Arrays.
+- **5.** CSS Styling.
