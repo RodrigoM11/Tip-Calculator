@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Tip Calculator App
 
 This is a simple **Tip Calculator App** built with **HTML**, **CSS**, and **JavaScript**. The app allows users to calculate the tip amount per person and the total bill per person by selecting predefined percentages or entering a custom percentage.
